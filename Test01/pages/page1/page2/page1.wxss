@@ -2,9 +2,10 @@
   font-size:30rpx;
 }
 .topChart{
-  width:100%;
+  width:calc(100% - 6px);
   height:500rpx;
   color:#fff;
+  margin-left: 1px;
   padding:10rpx;
   margin-top:1rpx;
 }
