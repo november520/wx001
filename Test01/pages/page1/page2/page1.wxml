@@ -1,33 +1,55 @@
 <view class="con">
-<view class="topChart">
-<canvas class="canvas" canvas-id="myCanvas" />
-</view>
-<view class="tabView">
-<view class="tab {{page=='tab1'?'active':''}}" id="tab1" bindtap="goToDetail">基金信息</view>
-<view class="tab {{page=='tab2'?'active':''}}" id="tab2" bindtap="goToDetail">历史净值</view>
-<view class="tab {{page=='tab3'?'active':''}}" id="tab3" bindtap="goToDetail">业绩指标</view>
-</view>
-<template name="tab1">
-<view> 
-<rich-text nodes="{{baseInfoNodes1}}" class='ulText' bindtap="tap"></rich-text>
-<rich-text nodes="{{baseInfoNodes2}}" class='ulText'></rich-text>
-</view> 
-</template>
-<template name="tab2">
-<view>
-<rich-text nodes="{{navTitleNodes1}}"></rich-text> 
-<rich-text nodes="{{navTitleNodes2}}"></rich-text> 
-</view>
-</template>
-<template name="tab3">
-<view class='performView'>
-<view class='performCard'>
-<view class='perfTitle'>同类排名</view>
-</view>
-<progress percent='20' active='true' style='margin-top:40rpx;width:40%'></progress> 
-</view>
-</template>
-<block>
-<template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2}}"/>
-</block>
+  <view class="topChart">
+    <canvas class="canvas" canvas-id="myCanvas" />
+  </view>
+  <view class="tabView">
+    <view class="tab {{page=='tab1'?'active':''}}" id="tab1" bindtap="goToDetail">基金信息</view>
+    <view class="tab {{page=='tab2'?'active':''}}" id="tab2" bindtap="goToDetail">历史净值</view>
+    <view class="tab {{page=='tab3'?'active':''}}" id="tab3" bindtap="goToDetail">业绩指标</view>
+  </view>
+  <template name="tab1">
+     <view> 
+      <rich-text nodes="{{baseInfoNodes1}}" class='ulText' bindtap="tap"></rich-text>
+      <rich-text nodes="{{baseInfoNodes2}}" class='ulText'></rich-text>
+     </view> 
+  </template>
+  <template name="tab2">
+    <view>
+      <rich-text nodes="{{navTitleNodes1}}"></rich-text>  
+      <rich-text nodes="{{navTitleNodes2}}"></rich-text>  
+    </view>
+  </template>
+  <template name="tab3">
+    <view class='performView'>
+      <view class='performCard'>
+        <view class='perfTitle'>同类排名</view>
+        <view class='perfCon'>
+          <view>
+            <view>年化收益率</view>
+            <progress percent='20' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#F9204B' class='cir_progress'></progress> 
+            <view class='f12'>占比20%</view> 
+          </view>
+          <view>
+            <view>累计收益率</view>
+            <progress class='cir_progress' percent='80' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#AE56D6'></progress> 
+            <view class='f12'>占比80%</view> 
+          </view>
+          <view>
+            <view class='mtop20'>年化收益率</view>
+            <progress class='cir_progress' percent='10' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#62B5FA'></progress> 
+            <view class='f12'>占比10%</view> 
+          </view>
+          <view>
+            <view class='mtop20'>累计收益率</view>
+            <progress class='cir_progress' percent='50' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#9ABE51'></progress> 
+            <view class='f12'>占比50%</view> 
+          </view>
+        </view>
+      </view>
+      
+    </view>
+  </template>
+  <block>
+    <template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2}}"/>
+  </block>
 </view>
