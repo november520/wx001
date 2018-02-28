@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/page1/index",
+    "pages/page1/page2/page1"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#345",
+    "navigationBarTitleText": "阁楼测试",             "navigationBarTextStyle":"white",
+    "backgroundColor":"#eeeeee"
+  }
+}

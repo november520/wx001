@@ -1,0 +1,6 @@
+<!--pages/smytTest001/index.wxml-->
+<view>
+  <input class='inputOne' placeholder='请输入基金名称' focus='true'/>
+  <icon class="icon" type="success" color="#345" size="26" bindtap="goToDetail"/>
+  <button bindtap="goToDetail" style="width:200rpx;height:200rpx;border:1px solid #eee;border-radius:50%;line-height:200rpx" >click</button>
+</view>

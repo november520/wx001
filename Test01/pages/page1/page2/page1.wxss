@@ -1,0 +1,84 @@
+.con{
+  font-size:30rpx;
+}
+.topChart{
+  width:100%;
+  height:500rpx;
+  color:#fff;
+  padding:10rpx;
+  margin-top:1rpx;
+}
+.tabView{
+  border-bottom:1px solid #eeeeee;
+}
+.tab{
+  display:inline-block;
+  width:29%;
+  height:80rpx;
+  line-height:80rpx;
+  text-align:center;
+  margin:0 2%;
+}
+.active{
+  border-bottom:5rpx solid #ff9400;
+  font-weight:600;
+}
+.canvas {
+    width: 96%;
+    height: 500rpx;  
+    border: 1px solid #345;
+    border-radius:10rpx;
+}
+.li_sub_title,.li_sub_con {
+    height:64rpx;
+    line-height:64rpx;
+}
+.li_sub_con {
+  color: #70757b;
+}
+.li_sub_title:first-child,.li_sub_con:first-child {
+  margin-top: 20rpx;
+}
+.ulText {
+  width: 60%;
+  float: left;
+  font-size: 26rpx;
+}
+.ulText:first-child {
+  width: 35%;
+}
+.ulText:last-child {
+  padding-left: 0;
+}
+.red {
+  color: red;
+}
+.f14{
+  font-size: 28rpx;
+}
+.f12{
+  font-size: 24rpx;
+}
+.divText {
+  display: flex;
+  color: #70757b;
+  font-size: 26rpx;
+  margin: 30rpx;
+}
+.nav_top_div {
+  flex: 1;
+  border-right: 1px dashed #ddd;
+  height: 120rpx;
+  text-align: center;
+}
+.nav_top_div:nth-child(2){
+  flex: 1.5;
+}
+.stra_p {
+  font-size: 24rpx;
+}
+.p_num {
+  height:32px;
+  line-height:40px;
+  font-size:18px;
+}
