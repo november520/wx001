@@ -1,5 +1,6 @@
 
 const util = require('../../../utils/util.js')
+const Charts = require('../../../utils/wxcharts.js')
 
 Page({
   data: {
@@ -214,7 +215,6 @@ Page({
   },
   onLoad: function (e) {
     //图表
-    var Charts = require('wxcharts.js');
     new Charts({
       canvasId: 'myCanvas',
       type: 'line',

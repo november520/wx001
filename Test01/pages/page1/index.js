@@ -1,4 +1,6 @@
 // pages/smytTest001/.js
+var data111 = require("../../app.js");
+
 Page({
   data: {
     
@@ -8,12 +10,10 @@ Page({
       url: './page2/page1'
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
   },
 
   /**
