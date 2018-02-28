@@ -29,6 +29,7 @@
     border: 1px solid #345;
     border-radius:10rpx;
 }
+/* 基本信息 */
 .li_sub_title,.li_sub_con {
     height:64rpx;
     line-height:64rpx;
@@ -59,6 +60,7 @@
 .f12{
   font-size: 24rpx;
 }
+/* 历史净值 */
 .divText {
   display: flex;
   color: #70757b;
@@ -81,4 +83,54 @@
   height:32px;
   line-height:40px;
   font-size:18px;
+}
+/* 业绩排名 */
+.performView {
+  padding: 40rpx;
+}
+.performCard {
+  position: relative;
+  width: 100%;
+  height: 450rpx;
+  border-radius: 16rpx;
+  border: 2rpx solid #ddd;
+  box-shadow: 4rpx 4rpx 4rpx #aaa;
+}
+.perfTitle {
+  width: 100%;
+  height: 55rpx;
+  line-height: 55rpx;
+  margin: 20rpx 7rpx;
+  border-left: 7rpx solid #345;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+}
+.perfCon {
+  width: 100%;
+  padding: 10rpx 40rpx;
+  color: #70757b;
+  font-size: 26rpx;
+}
+.perfCon>view {
+  display: inline-block;
+  width: 40%;
+  height: 140rpx;
+  padding: 0 10rpx;
+}
+.perfCon>view:first-child{
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.perfCon>view:last-child{
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  margin-top: -1px;
+}
+.mtop20{
+  margin-top: 40rpx;
+}
+.cir_progress {
+  height: 4px;
+  border-radius: 5px;
+  overflow: hidden;
 }
