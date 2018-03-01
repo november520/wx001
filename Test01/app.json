@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/page1/index",
-    "pages/page1/page2/page1"
+    "pages/page1/page2/page1",
+    "pages/page1/proList/proList"
   ],
   "window":{
     "backgroundTextStyle":"dark",

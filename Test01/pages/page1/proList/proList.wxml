@@ -1,0 +1,6 @@
+<view class='con'>
+  <view class="top_search">
+    <input placeholder='请输入基金名称' />
+    <button plain='true' bindtap="cancel" size='mini'>取消</button>
+  </view>
+</view>

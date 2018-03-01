@@ -7,7 +7,8 @@ Page({
   },
   goToDetail: function () { 
     wx.navigateTo({
-      url: './page2/page1'
+      url: './proList/proList'
+      // './page2/page1'
     })
   },
   /**

@@ -175,6 +175,7 @@ Page({
           name: 'div',
           attrs: {
             class: 'nav_top_div',
+            style: 'border:none;'
           },
           children: [
             {
@@ -204,7 +205,7 @@ Page({
     navTitleNodes2: [{
       name: 'hr',
       attrs: {
-        style: 'width:100%;height:40px;background:#eee;border:1px solid #ddd;'
+        style: 'width:calc(100% - 2px);height:40px;background:#eee;border:1px solid #ddd;'
       }
     }]
   },
