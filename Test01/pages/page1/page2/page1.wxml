@@ -26,18 +26,18 @@
         <view class='perfCon'>
           <view>
             <view>年化收益率</view>
-            <progress percent='20' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#F9204B' class='cir_progress'></progress> 
-            <view class='f12'>占比20%</view> 
+            <progress percent='10' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#F9204B' class='cir_progress'></progress> 
+            <view class='f12'>前10%</view> 
           </view>
           <view>
             <view>累计收益率</view>
-            <progress class='cir_progress' percent='80' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#AE56D6'></progress> 
-            <view class='f12'>占比80%</view> 
+            <progress class='cir_progress' percent='10' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#AE56D6'></progress> 
+            <view class='f12'>前10%</view> 
           </view>
           <view>
             <view class='mtop20'>年化收益率</view>
             <progress class='cir_progress' percent='10' active='true' stroke-width='4' style='margin:16rpx 0;width:90%' activeColor='#62B5FA'></progress> 
-            <view class='f12'>占比10%</view> 
+            <view class='f12'>前10%</view> 
           </view>
           <view>
             <view class='mtop20'>累计收益率</view>
@@ -46,10 +46,23 @@
           </view>
         </view>
       </view>
-      
+
+      <view class='performCard'>
+        <view class='perfTitle'>正负收益周期比</view>
+        <view class='perfCon'>
+          <canvas canvas-id="ringCanvas" />
+        </view>
+      </view>
+      <view class='performCard'>
+        <view class='perfTitle'>正负收益周期比柱状图</view>
+        <view class='perfCon'>
+          <canvas canvas-id="columnCanvas" />
+        </view>
+      </view>    
     </view>
   </template>
   <block>
     <template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2}}"/>
   </block>
+  <view class='tabPoint'>｡･ω･｡</view>
 </view>
