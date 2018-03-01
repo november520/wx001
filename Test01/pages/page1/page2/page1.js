@@ -204,16 +204,22 @@ Page({
     navTitleNodes2: [{
       name: 'hr',
       attrs: {
-        style: 'width:100%;height:40px;background:#eee;border:1px solid #ddd;'
+        style: 'width:calc(100% - 2px);height:40px;background:#eee;border:1px solid #ddd;'
       }
     }]
   },
   goToDetail: function (event) { 
     this.setData({
-      page: event.target.id
+      page: event.target.id,
     })
   },
   onLoad: function (e) {
+    //从上个页面获取到fund_id
+    this.setData({
+      fund_id: e.fund_id,
+    });
+    var fund_id = this.data.fund_id;
+    console.log(fund_id);
     //图表
     new Charts({
       canvasId: 'myCanvas',
