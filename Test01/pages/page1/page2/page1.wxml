@@ -9,8 +9,10 @@
   </view>
   <template name="tab1">
      <view> 
+     <!-- 富文本节点的两种方式 -->
       <rich-text nodes="{{baseInfoNodes1}}" class='ulText' bindtap="tap"></rich-text>
-      <rich-text nodes="{{baseInfoNodes2}}" class='ulText'></rich-text>
+      <!-- <rich-text nodes="{{baseInfoNodes2}}" class='ulText'></rich-text> -->
+      <rich-text nodes="<ul class='ul_no_list' style='list-style:none;padding-left:0;'><li class='li_sub_con'>{{proname}}</li><li class='li_sub_con'>汇鸿价值成长2号私募证券投资基金</li><li class='li_sub_con'>{{prostragey}}</li><li class='li_sub_con'>{{proname}}</li></ul>" class='ulText' bindtap="tap"></rich-text>
      </view> 
   </template>
   <template name="tab2">
@@ -62,7 +64,7 @@
     </view>
   </template>
   <block>
-    <template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2}}"/>
+    <template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2,prostragey,proname}}"/>
   </block>
   <view class='tabPoint'>｡･ω･｡</view>
 </view>

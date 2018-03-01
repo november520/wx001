@@ -5,6 +5,8 @@ const Charts = require('../../../utils/wxcharts.js')
 Page({
   data: {
     page:"tab1",
+    proname:"",
+    prostragey: "",
     baseInfoNodes1: [{
       name: 'ul',
       attrs: {
@@ -48,52 +50,6 @@ Page({
                 type: 'text',
                 text: '产品名称：'
               }],
-        },
-      ]
-    }],
-    baseInfoNodes2: [{
-      name: 'ul',
-      attrs: {
-        class: 'ul_no_list',
-        style: 'list-style:none;padding-left:0; '
-      },
-      children: [
-        {
-          name: 'li',
-          attrs: {
-            class: 'li_sub_con',
-          },
-          children: [{
-            type: 'text',
-            text: '汇鸿价值成长2号'
-          }],
-        }, {
-          name: 'li',
-          attrs: {
-            class: 'li_sub_con',
-          },
-          children: [{
-            type: 'text',
-            text: '汇鸿价值成长2号私募证券投资基金'
-          }]
-        }, {
-          name: 'li',
-          attrs: {
-            class: 'li_sub_con',
-          },
-          children: [{
-            type: 'text',
-            text: '股自自主发行'
-          }]
-        }, {
-          name: 'li',
-          attrs: {
-            class: 'li_sub_con',
-          },
-          children: [{
-            type: 'text',
-            text: '股票策略-股票多头'
-          }],
         },
       ]
     }],
@@ -300,6 +256,17 @@ Page({
     }
   },
   onLoad: function (e) {
+    console.log(e.dataset,"----")
+    var data = JSON.parse(e.dataset);
+    //设置抬头
+    wx.setNavigationBarTitle({
+      title: data.name,
+    })
+    this.setData({
+      proname: data.name,
+      prostragey: data.stragey
+    })
+    console.log(this.data.proname, this.data.prostragey,"====")
     //折线图
     new Charts({
       canvasId: 'myCanvas',
