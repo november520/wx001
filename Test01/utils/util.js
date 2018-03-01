@@ -13,7 +13,9 @@ const formatNumber = n => {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
+const windowWidth = wx.getSystemInfoSync().windowWidth;
 
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  windowWidth: windowWidth
 }

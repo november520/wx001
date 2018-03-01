@@ -46,10 +46,23 @@
           </view>
         </view>
       </view>
-      
+
+      <view class='performCard'>
+        <view class='perfTitle'>正负收益周期比</view>
+        <view class='perfCon'>
+          <canvas canvas-id="ringCanvas" />
+        </view>
+      </view>
+      <view class='performCard'>
+        <view class='perfTitle'>正负收益周期比柱状图</view>
+        <view class='perfCon'>
+          <canvas canvas-id="columnCanvas" />
+        </view>
+      </view>    
     </view>
   </template>
   <block>
     <template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2}}"/>
   </block>
+  <view class='tabPoint'>｡･ω･｡</view>
 </view>
