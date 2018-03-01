@@ -204,23 +204,102 @@ Page({
     navTitleNodes2: [{
       name: 'hr',
       attrs: {
-        style: 'width:calc(100% - 2px);height:40px;background:#eee;border:1px solid #ddd;'
+        style: 'width:100%;height:40px;background:#eee;border:1px solid #ddd;'
       }
     }]
   },
   goToDetail: function (event) { 
     this.setData({
-      page: event.target.id,
+      page: event.target.id
     })
+    if (event.target.id=="tab3"){
+      //饼图
+      new Charts({
+        animation: true,
+        canvasId: 'ringCanvas',
+        type: 'ring',
+        extra: {
+          ringWidth: 15,
+          pie: {
+            offsetAngle: -45
+          }
+        },
+        title: {
+          name: '70%',
+          color: '#7cb5ec',
+          fontSize: 25
+        },
+        subtitle: {
+          name: '收益率',
+          color: '#666666',
+          fontSize: 15
+        },
+        series: [{
+          name: '成交量1',
+          data: 15,
+          stroke: false
+        }, {
+          name: '成交量2',
+          data: 35,
+          stroke: false
+        }, {
+          name: '成交量3',
+          data: 78,
+          stroke: false
+        }, {
+          name: '成交量4',
+          data: 63,
+          stroke: false
+        }],
+        disablePieStroke: true,
+        width: util.windowWidth - 100,
+        height: 170,
+        dataLabel: false,
+        legend: false,
+        padding: 0
+      });
+      //柱状图
+      var chartData={
+        main:{
+          categories:[2013,2014,2015,2016],
+          data:[15.334,20.345,50.222,37.443],
+        }
+      }
+      new Charts({
+        canvasId: 'columnCanvas',
+        type: 'column',
+        animation: true,
+        categories: chartData.main.categories,
+        series: [{
+          name: '成交量',
+          data: chartData.main.data,
+          format: function (val, name) {
+            return val.toFixed(2) + '万';
+          }
+        }],
+        yAxis: {
+          format: function (val) {
+            return val + '万';
+          },
+          title: '收益',
+          min: 0
+        },
+        xAxis: {
+          disableGrid: false,
+          type: 'calibration'
+        },
+        extra: {
+          column: {
+            width: 15
+          }
+        },
+        width: util.windowWidth-60,
+        height: 140,
+      });
+    }
   },
   onLoad: function (e) {
-    //从上个页面获取到fund_id
-    this.setData({
-      fund_id: e.fund_id,
-    });
-    var fund_id = this.data.fund_id;
-    console.log(fund_id);
-    //图表
+    //折线图
     new Charts({
       canvasId: 'myCanvas',
       type: 'line',
@@ -249,6 +328,7 @@ Page({
       height: wx.getSystemInfoSync().windowHeight/2-50,
       dataLabel: true,
     });
+    
   }
  
 })
