@@ -1,14 +1,16 @@
-<view class='con'>
-  <view class="top_search">
-    <input placeholder='请输入基金名称' />
-    <button plain='true' bindtap="cancel" size='mini'>取消</button>
+<view style='padding-top:190rpx'>
+  <view class='con'>
+    <view class="top_search">
+      <input placeholder='请输入基金名称' />
+      <button plain='true' bindtap="cancel" size='mini'>取消</button>
+    </view>
+    <view class='topTip'>搜索结果</view>
   </view>
-  <view class='topTip'>搜索结果</view>
+  <view style='height:500rpx'>
+    <view wx:for="{{list}}" class='list' data-name="{{item.name}}" data-stragey="{{item.stragey}}" bindtap='goToDetail'>
+      <view class='list_name'>{{item.name}}</view>
+      <view class='list_name'>{{item.company}}</view>
+      <view class='list_name'>{{item.stragey}}</view>
+    </view>
+  </view>
 </view>
-<scroll-view class='con1'>
-  <view wx:for="{{list}}" class='list' data-name="{{item.name}}" data-stragey="{{item.stragey}}" bindtap='goToDetail'>
-    <view class='list_name'>{{item.name}}</view>
-    <view class='list_name'>{{item.company}}</view>
-    <view class='list_name'>{{item.stragey}}</view>
-  </view>
-</scroll-view>

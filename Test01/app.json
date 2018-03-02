@@ -11,7 +11,8 @@
     "navigationBarBackgroundColor": "#345",
     "navigationBarTitleText": "阁楼测试", 
     "navigationBarTextStyle": "white",
-    "backgroundColor": "#eeeeee"
+    "backgroundColor": "#eeeeee",
+    "onReachBottomDistance":-10
   },
   "tabBar": {
     "color": "#a9b7b7",

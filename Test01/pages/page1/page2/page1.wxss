@@ -140,10 +140,11 @@
   position: fixed;
   right: 40rpx;
   bottom: 120rpx;
-  width: 90rpx;
-  height: 90rpx;
-  line-height: 90rpx;
-  border-radius: 45rpx;
+  width: 105rpx;
+  height: 105rpx;
+  line-height: 105rpx;
+  border-radius: 52rpx;
   background-color: #345;
   color: #fff;
+  padding: 0;
 }
