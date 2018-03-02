@@ -1,21 +1,18 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/**主页**/
+.inputOne{
+  width:80%;
+  height:40rpx;
+  border: 1rpx solid #345;
+  margin-left:8%;
+  margin-top:50%;
+  padding:10rpx;
+  border-radius:5rpx;
+  font-size:32rpx;
+  line-height:42rpx;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.icon{
+  position:absolute;
+  top:31.6%;
+  right:10%;
 }

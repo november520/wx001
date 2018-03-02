@@ -1,13 +1,6 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+<!--主页-->
+<view>
+  <input class='inputOne' placeholder='请输入基金名称'/>
+  <!-- <icon class="icon" type="success" color="#345" size="26" bindtap="goToDetail"/> -->
+  <button style="width:200rpx;height:200rpx;border:1px solid #eee;border-radius:50%;line-height:200rpx" bindtap="goToDetail">click</button>
 </view>
