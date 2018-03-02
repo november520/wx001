@@ -1,5 +1,5 @@
 const util = require('../../../utils/util.js')
-
+const app = getApp();
 Page({
   data: {
     list:[
@@ -91,7 +91,7 @@ Page({
     ]
   },
   goToDetail: function (e) {
-    console.log(e.currentTarget.dataset)
+    console.log(app.globalData.userInfo)
     wx.navigateTo({
       url: './../page2/page1?dataset=' + JSON.stringify(e.currentTarget.dataset)
     })

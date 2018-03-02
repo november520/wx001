@@ -1,9 +1,29 @@
 // pages/smytTest001/.js
 var data111 = require("../../app.js");
-
+const app = getApp();
 Page({
   data: {
-    
+    userInfo: {},
+    hasUserInfo: false,
+    canIUse: wx.canIUse('button.open-type.getUserInfo')
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
+  goToPage1: function () {
+    wx.navigateTo({
+      url: '../page1/index'
+    })
+  },
+  getUserInfo: function (e) {
+    //app.globalData.userInfo = e.detail.userInfo;
+    // this.setData({
+    //   userInfo: e.detail.userInfo,
+    //   hasUserInfo: true
+    // })
   },
   goToDetail: function () { 
     wx.navigateTo({
@@ -15,6 +35,21 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+    wx.getUserInfo({
+      success: res=> {
+        app.globalData.userInfo = res.userInfo
+        var userInfo = res.userInfo;
+        var nickName = userInfo.nickName;
+        var avatarUrl = userInfo.avatarUrl;
+        var gender = userInfo.gender; //性别 0：未知、1：男、2：女
+        var province = userInfo.province;
+        var city = userInfo.city;
+        var country = userInfo.country;
+      }
+    });
+    console.log(app.globalData.userInfo);
+    // that.getUserInfo(option);
   },
 
   /**

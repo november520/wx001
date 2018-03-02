@@ -256,7 +256,6 @@ Page({
     }
   },
   onLoad: function (e) {
-    console.log(e.dataset,"----")
     var data = JSON.parse(e.dataset);
     //设置抬头
     wx.setNavigationBarTitle({
@@ -266,7 +265,6 @@ Page({
       proname: data.name,
       prostragey: data.stragey
     })
-    console.log(this.data.proname, this.data.prostragey,"====")
     //折线图
     new Charts({
       canvasId: 'myCanvas',
