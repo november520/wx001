@@ -66,5 +66,5 @@
   <block>
     <template is="{{page}}" data="{{baseInfoNodes1,baseInfoNodes2,navTitleNodes1,navTitleNodes2,prostragey,proname}}"/>
   </block>
-  <view class='tabPoint'>｡･ω･｡</view>
+  <button class='tabPoint' open-type='contact'>｡･ω･｡</button>
 </view>

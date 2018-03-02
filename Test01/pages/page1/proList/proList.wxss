@@ -3,15 +3,22 @@
   width: 100%;
 }
 .con {
-  position: fixed;
+  position: fixed; 
   top: 0;
-  left: 0;
+  left: 0; 
   width: 100%;
+  height: 192rpx;
   z-index: 10;
 }
-.con1 {
-  margin-top:190rpx;
-}
+ .con1 {
+  position: absolute;
+  top:180rpx; 
+ } 
+ .con2 {
+  position: relative;
+  width: 100%;
+  height: 200rpx;
+} 
 /* 头部搜索框 */
 .top_search {
   height: 50rpx;
@@ -54,9 +61,12 @@
   font-size: 24rpx;
 }
 .list view {
-  flex:1;
+  flex:1.5;
   padding-left: 30rpx;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; 
 }
-.list view:first-child {
-  flex: 1.5;
+.list view:last-child {
+  flex: 1;
 }
