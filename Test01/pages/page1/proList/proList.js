@@ -1,6 +1,9 @@
 const util = require('../../../utils/util.js')
+
 //全局变量
 var page=0;
+
+const app = getApp();
 
 Page({
   data: {
@@ -93,7 +96,7 @@ Page({
     ]
   },
   goToDetail: function (e) {
-    console.log(e.currentTarget.dataset)
+    console.log(app.globalData.userInfo)
     wx.navigateTo({
       url: './../page2/page1?dataset=' + JSON.stringify(e.currentTarget.dataset)
     })
