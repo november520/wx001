@@ -60,6 +60,17 @@
   border-bottom: 2rpx solid #ddd;
   font-size: 24rpx;
 }
+.loading {
+  display: flex;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 24rpx;
+  color: #70757b;
+}
+.loading view {
+  flex:1;
+  text-align: center;
+}
 .list view {
   flex:1.5;
   padding-left: 30rpx;

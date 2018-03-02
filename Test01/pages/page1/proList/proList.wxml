@@ -6,11 +6,17 @@
     </view>
     <view class='topTip'>搜索结果</view>
   </view>
-  <view style='height:500rpx'>
+  <view style='height:100%'>
     <view wx:for="{{list}}" class='list' data-name="{{item.name}}" data-stragey="{{item.stragey}}" bindtap='goToDetail'>
       <view class='list_name'>{{item.name}}</view>
       <view class='list_name'>{{item.company}}</view>
       <view class='list_name'>{{item.stragey}}</view>
     </view>
   </view>
+  <view class="tips1">
+ <view wx:if="{{hasMore}}" class='loading'>
+  <view><icon type="waiting" size="15"/> <text>玩命的加载中...</text></view>
+ </view>
+ <view wx:else class='loading'><view><text>没有更多内容了==</text></view></view>
+ </view>
 </view>

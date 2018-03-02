@@ -7,6 +7,7 @@ const app = getApp();
 
 Page({
   data: {
+    hasMore: true,
     list:[
       {
         name: '汇鸿价值成长2号',
@@ -125,29 +126,38 @@ Page({
     // })
     console.log('加载更多',page)
     var that = this;
-    setTimeout(() => {
-      this.setData({
-        // isHideLoadMore: true,
-        list: that.data.list.concat([
-          {
-            name: '东方红1号',
-            company: '上海东方证券资产管理公司',
-            stragey: '股票多头'
-          },
-          {
-            name: '东方红2号',
-            company: '上海东方证券资产船里',
-            stragey: '股票多头'
-          },
-          {
-            name: '东方红3号',
-            company: '上海东方证券资产船里',
-            stragey: '股票多头'
-          },
-        ]),
-      });
-      wx.hideLoading()
-    }, 2000)
+    if(page<=4){
+      setTimeout(() => {
+        this.setData({
+          // isHideLoadMore: true,
+          list: that.data.list.concat([
+            {
+              name: '东方红1号',
+              company: '上海东方证券资产管理公司',
+              stragey: '股票多头'
+            },
+            {
+              name: '东方红2号',
+              company: '上海东方证券资产船里',
+              stragey: '股票多头'
+            },
+            {
+              name: '东方红3号',
+              company: '上海东方证券资产船里',
+              stragey: '股票多头'
+            },
+          ]),
+        });
+        wx.hideLoading()
+      }, 2000)
+    }else{
+      setTimeout(() => {
+        this.setData({
+          hasMore:false
+        });
+        wx.hideLoading()
+      }, 2000)
+    }
   }, 
   
   //加载更多
