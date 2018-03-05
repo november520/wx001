@@ -1,6 +1,6 @@
 <view class="con">
   <view class="topChart">
-    <canvas class="canvas" canvas-id="myCanvas" />
+    <canvas class="canvas" canvas-id="myCanvas" bindtouchstart="touchHandler"/>
   </view>
   <view class="tabView">
     <view class="tab {{page=='tab1'?'active':''}}" id="tab1" bindtap="goToDetail">基金信息</view>

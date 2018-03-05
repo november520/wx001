@@ -1,6 +1,7 @@
 
-const util = require('../../../utils/util.js')
-const Charts = require('../../../utils/wxcharts.js')
+const util = require('../../../utils/util.js');
+const Charts = require('../../../utils/wxcharts.js');
+var lineChart = null;
 
 Page({
   data: {
@@ -165,6 +166,16 @@ Page({
       }
     }]
   },
+  touchHandler: function (e) {
+    console.log("000")
+    console.log(lineChart.getCurrentDataIndex(e));
+    lineChart.showToolTip(e, {
+      // background: '#7cb5ec',
+      format: function (item, category) {
+        return category + ' ' + item.name + ':' + item.data
+      }
+    });
+  }, 
   goToDetail: function (event) { 
     this.setData({
       page: event.target.id
@@ -266,7 +277,7 @@ Page({
       prostragey: data.stragey
     })
     //折线图
-    new Charts({
+    lineChart = new Charts({
       canvasId: 'myCanvas',
       type: 'line',
       categories: ['2012', '2013', '2014', '2015', '2016', '2017'],
@@ -290,9 +301,11 @@ Page({
         },
         min: 0
       },
+      legend: true,
       width: wx.getSystemInfoSync().windowWidth-10,
       height: wx.getSystemInfoSync().windowHeight/2-50,
       dataLabel: true,
+      dataPointShape:true
     });
     
   }
