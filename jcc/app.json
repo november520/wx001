@@ -1,12 +1,40 @@
 {
   "pages":[
     "pages/main/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/autoshape/autoshape",
+    "pages/my/my"
   ],
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#F14F2F",
+    "navigationBarTitleText": "基查查",
+    "navigationBarTextStyle":"#ffffff",
+    "onReachBottomDistance": -10
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#F14F2F",
+    "fontSize": "32rpx",
+    "list": [
+      {
+        "selectedIconPath": "images/home.png",
+        "iconPath": "images/home1.png",
+        "pagePath": "pages/main/index",
+        "text": "主页"
+      },
+      {
+        "selectedIconPath": "images/auto.png",
+        "iconPath": "images/auto1.png",
+        "pagePath": "pages/autoshape/autoshape",
+        "text": "自选"
+      },
+      {
+        "selectedIconPath": "images/my.png",
+        "iconPath": "images/my1.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
   }
 }
