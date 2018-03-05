@@ -1,0 +1,138 @@
+<!--pages/main/resultspage/publicdetail/publicdetail.wxml-->
+<view class="detail-title">
+  <view class="detail-title-top">
+    <text>云通公募一号</text>
+    <button class="title-top-btn">相似基金</button>
+  </view>
+  <view class="detail-title-middle">
+    <text class="fund-id">000001</text>
+    <text class="fund-type">股票类型</text>
+  </view>
+  <view class="detail-title-bottom">
+    <view>
+      <text>净值日期</text>
+      <text>2018-02-28</text>
+    </view>
+    <view>
+      <text>单位净值</text>
+      <text>1.8888</text>
+    </view>
+    <view>
+      <text>近一年收益</text>
+      <text>28.88%</text>
+    </view>
+    <icon></icon>
+  </view>
+  <view class="detail-title-reviews">
+    <icon></icon>
+    <text>云通点评:该基金近一年收益表现优异，风险控制极佳，单位风险下获取收益能力极佳</text>
+  </view>
+  <view class="detail-fre">
+    <button>今年以来</button>
+    <button>近三月</button>
+    <button>近六月</button>
+    <button>近一年</button>
+    <button>成立以来</button>
+  </view>
+
+  <view class="detail-chart">
+    <view class="net">
+      <view class="type">
+        <button>业绩走势</button>
+        <button>净值</button>
+      </view>
+      <view class="chart-content">
+      </view>
+    </view>
+    <view class="rank">
+      <view>
+        同类排名<text class="f12">(截至2017-12-31)</text>  
+      </view>
+      <view>
+        <rich-text class="rank-table" type = "text">
+          <ul>
+            <li>
+              <div>指标</div>
+              <div>排名</div>
+            </li>
+            <li>
+              <div><span>收益率</span><span>28.88%</span></div>
+              <div>
+                <span>10/1000</span>
+                <span>
+                  <progress percent='20' active='true' stroke-width='4'activeColor='#F9204B'class='cir_progress'></progress>
+                  <view class='f10'>前10%</view>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div><span>最大回撤</span><span>1.11%</span></div>
+              <div>
+                <span>10/1000</span>
+                <span>
+                  <progress percent='20' active='true' stroke-width='4'activeColor='#AE56D6'class='cir_progress'></progress>
+                  <view class='f10'>前10%</view>
+                </span>
+              </div>
+            </li>
+            <li>
+              <div><span>夏普比</span><span>3.52</span></div>
+              <div>
+                <span>10/1000</span>
+                <span>
+                  <progress percent='20' active='true' stroke-width='4'activeColor='#62B5FA'class='cir_progress'></progress>
+                  <view class='f10'>前10%</view>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </rich-text>
+      </view>
+    </view>
+    <view class="risk">
+      <view>风险指标</view>
+      <view class="chart-content"></view>
+    </view>
+    <view class="info">
+      <view>基金信息</view>
+      <view>
+        <rich-text class="info-table" type = "text">
+          <ul>
+            <li>
+              <span>产品简称</span>
+              <span></span>
+            </li>
+            <li>
+              <span>产品全称</span>
+              <span></span>
+            </li>
+            <li>
+              <span>基金公司</span>
+              <span></span>
+            </li>
+            <li>
+              <span>基金经理</span>
+              <span></span>
+            </li>
+            <li>
+              <span>成立日期</span>
+              <span></span>
+            </li>
+            <li>
+              <span>发行方式</span>
+              <span></span>
+            </li>
+            <li>
+              <span>投资策略</span>
+              <span></span>
+            </li>
+            <li>
+              <span>披露频率</span>
+              <span></span>
+            </li>
+          </ul>
+        </rich-text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,133 @@
+/* 公募详情 */
+.detail-title{
+  padding: 10rpx 20rpx;
+}
+.detail-title-top{
+  height: 100rpx;
+}
+.detail-title-top text{
+  line-height: 80rpx;
+}
+.title-top-btn{
+  float: right;
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 1.6;
+  margin-right: 10rpx;
+}
+.detail-title-middle{
+  padding-left:20rpx; 
+}
+.detail-title-middle text{
+  font-size:11pt;
+}
+.detail-title-middle .fund-type{
+  margin-left: 30rpx;
+}
+.detail-title-bottom view{
+  display: inline-block;
+  width: 28%;
+  text-align: center;
+}
+.detail-title-bottom text{
+  display: block;
+  height: 40rpx;
+  font-size:10pt; 
+}
+.detail-title-reviews{
+  font-size: 11pt;
+}
+.detail-fre{
+  text-align: center;
+}
+.detail-fre button{
+  display: inline-block;
+  width: 120rpx;
+  margin: 0 2rpx;
+  height: 60rpx;
+  font-size: 9pt;
+  padding-left:5rpx; 
+  padding-right:5rpx; 
+}
+.detail-chart .type button{
+  display: inline-block;
+  line-height: 2;
+  margin: 0 5rpx;
+  width: 160rpx;
+  height: 60rpx;
+  font-size: 13px;
+}
+.detail-chart .chart-content{
+  height:340rpx;
+}
+.rank-table li{
+  display: block;
+  border: 2rpx solid #ddd;
+  border-bottom: none;
+  line-height: 2;
+}
+.rank-table li div{
+  display: inline-block;
+}
+.rank-table li span{
+  display: inline-block;
+}
+.rank-table li:first-child div{
+  width: calc(50% - 10rpx) !important;
+  text-align: center;
+}
+.rank-table li:last-child{
+  border: 2rpx solid #ddd;
+}
+.rank-table li>div{
+  font-size: 13px;
+  line-height: 2;
+}
+.rank-table li>div:first-child{
+  padding-left: 10rpx;
+  width: calc(35% - 10rpx);
+}
+.rank-table li>div:last-child{
+  width: calc(65% - 10rpx);
+  padding-left: 10rpx;
+}
+.rank-table li>div:first-child>span:first-child{
+  width: 60%;
+}
+.rank-table li>div:first-child>span:last-child{
+  width: 40%;
+}
+.rank-table li>div:last-child>span:first-child{
+  width: 30%;
+}
+.rank-table li>div:last-child>span:last-child{
+  width: 70%;
+}
+.cir_progress {
+  position: relative;
+  margin-top: 10rpx;
+  height: 4px;
+  border-radius: 5px;
+  width: 80%;
+  overflow: hidden;
+}
+.info-table li{
+  display: block;
+  border: 2rpx solid #ddd;
+  border-bottom: none;
+  line-height: 2;
+}
+.info-table li:last-child{
+  border-bottom: 2rpx solid #ddd;
+}
+.info-table li span{
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+}
+.info-table li span:first-child{
+  width: 30%;
+}
+.info-table li span:last-child{
+  width: 70%;
+}

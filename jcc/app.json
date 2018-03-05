@@ -1,7 +1,11 @@
 {
   "pages":[
     "pages/main/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/autoshape/autoshape",
+    "pages/main/resultspage/result",
+    "pages/main/resultspage/privatedetail/privatedetail",
+    "pages/main/resultspage/publicdetail/publicdetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

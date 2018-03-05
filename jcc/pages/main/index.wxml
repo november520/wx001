@@ -1,4 +1,4 @@
-<!--主页-->
+<!--搜索结果页-->
 <view>
   <input class='inputOne' placeholder='请输入基金名称'/>
   <!-- <icon class="icon" type="success" color="#345" size="26" bindtap="goToDetail"/> -->
