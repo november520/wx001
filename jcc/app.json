@@ -5,7 +5,7 @@
     "pages/autoshape/autoshape",
     "pages/main/resultspage/result",
     "pages/main/resultspage/privatedetail/privatedetail",
-    "pages/main/resultspage/publicdetail/publicdetail"
+    "pages/main/resultspage/publicdetail/publicdetail",
     "pages/my/my"
   ],
   "window":{
