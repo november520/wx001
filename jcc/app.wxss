@@ -11,3 +11,21 @@
 .red {
   color: #F14F2F;
 }
+.f12{
+  font-size: 12px;
+}
+.inlin-block{
+  display: inline-block !important;
+}
+.mtop5{
+  margin-top: 5rpx;
+}
+.f10{
+  font-size:10px;
+}
+.width70{
+  width: 30%;
+}
+.width30{
+  width: 30%;
+}

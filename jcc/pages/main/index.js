@@ -19,11 +19,6 @@ Page({
       url: '../logs/logs'
     })
   },
-  goToPage1: function () {
-    wx.navigateTo({
-      url: '../page1/index'
-    })
-  },
   getUserInfo: function (e) {
     //app.globalData.userInfo = e.detail.userInfo;
     // this.setData({
@@ -33,7 +28,7 @@ Page({
   },
   goToDetail: function () {
     wx.navigateTo({
-      url: './proList/proList'
+      url: './resultspage/publicdetail/publicdetail'
       // './page2/page1'
     })
   },
@@ -54,7 +49,7 @@ Page({
         var country = userInfo.country;
       }
     });
-    console.log(app.globalData.userInfo);
+    // console.log(app.globalData.userInfo);
     // that.getUserInfo(option);
   },
 
