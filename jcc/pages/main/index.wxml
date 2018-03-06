@@ -14,7 +14,7 @@
     <view class="page_con">
       <view>
         <image class="search_btn" src="../../images/search.png" ></image>
-        <input class="page_search {{focus?'active':''}}" placeholder="请输入基金及名称" bindtap="bindButtonTap"></input>
+        <input class="page_search {{focus?'active':''}}" placeholder="请输入基金及名称" bindfocus="bindButtonTap" bindblur="blur"></input>
         <image class="search_go" src="../../images/go.png" ></image>
       </view>
       <view class="tips">

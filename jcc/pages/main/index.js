@@ -14,6 +14,11 @@ Page({
       focus: true
     })
   },
+  blur: function () {
+    this.setData({
+      focus: false
+    })
+  },
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
