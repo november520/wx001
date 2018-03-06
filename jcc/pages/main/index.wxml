@@ -1,6 +1,51 @@
 <!--主页-->
 <view>
-  <input class='inputOne' placeholder='请输入基金名称'/>
-  <!-- <icon class="icon" type="success" color="#345" size="26" bindtap="goToDetail"/> -->
-  <button style="width:200rpx;height:200rpx;border:1px solid #eee;border-radius:50%;line-height:200rpx" bindtap="goToDetail">click</button>
+  <view class='page_top'>
+    <view class="page_hd">
+    <image class="bg_img" src="../../images/main_bg.png" ></image>
+      <view class="page_logo">
+         <view> 
+           <image style="width:170rpx;height:162rpx;" src="../../images/logo.png" ></image> 
+         </view> 
+      </view>
+      <view class="page_title"><text>查基金, 理好财!</text></view>
+    </view>
+    
+    <view class="page_con">
+      <view>
+        <image class="search_btn" src="../../images/search.png" ></image>
+        <input class="page_search {{focus?'active':''}}" placeholder="请输入基金及名称" bindtap="bindButtonTap"></input>
+        <image class="search_go" src="../../images/go.png" ></image>
+      </view>
+      <view class="tips">
+        <view class="tips_title">热索：</view>
+        <view class="tips_con">
+          <view>FOF</view>
+          <view>东方红</view>
+          <view>王亚伟</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="page_middle">
+    <view class="navi">
+      <image src="../../images/main_pg3.png" style="width:56rpx;height:52rpx;"></image>
+      <view>私募基金</view>
+    </view>
+    <view class="navi">
+      <image src="../../images/main_pg2.png" style="width:50rpx;height:60rpx;"></image>
+      <view>公募基金</view>
+    </view>
+    <view class="navi">
+      <image src="../../images/main_pg1.png" style="width:76rpx;height:48rpx;"></image>
+      <view>基金公司</view>
+    </view>
+  </view>
+  <view class="page_bottom">
+    <view class="red">热门基金：</view>
+    <view>景顺长城</view>
+    <view>东方红实业</view>
+    <view>汇升睿进一号</view>
+  </view>
+  
 </view>

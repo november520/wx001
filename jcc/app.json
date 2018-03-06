@@ -10,12 +10,14 @@
     "navigationBarBackgroundColor": "#F14F2F",
     "navigationBarTitleText": "基查查",
     "navigationBarTextStyle":"#ffffff",
-    "onReachBottomDistance": -10
+    "onReachBottomDistance": -10,
+    "backgroundColor": "#F7F8FA"
   },
   "tabBar": {
-    "color": "#a9b7b7",
+    "color": "#708091",
     "selectedColor": "#F14F2F",
-    "fontSize": "32rpx",
+    "backgroundColor":"#F8F8F8",
+    "fontSize": "24rpx",
     "list": [
       {
         "selectedIconPath": "images/home.png",

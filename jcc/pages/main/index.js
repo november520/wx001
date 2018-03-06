@@ -5,9 +5,15 @@ Page({
   data: {
     userInfo: {},
     hasUserInfo: false,
+    focus:false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
   //事件处理函数
+  bindButtonTap: function(){
+    this.setData({
+      focus: true
+    })
+  },
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
